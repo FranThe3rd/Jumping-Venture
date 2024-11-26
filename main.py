@@ -245,7 +245,7 @@ class Player():
         screen.blit(self.image, (self.rect.x + x_offset, self.rect.y + y_offset))
         
         # Draw collision box (optional - for debugging)
-        pygame.draw.rect(screen, (255, 255, 255), self.rect, 2)
+		#pygame.draw.rect(screen, (255, 255, 255), self.rect, 2)
 
         return game_over
 
@@ -327,7 +327,7 @@ class World():
 	def draw(self):
 		for tile in self.tile_list:
 			screen.blit(tile[0], tile[1])
-			pygame.draw.rect(screen, (255, 255, 255), tile[1], 2)
+			#pygame.draw.rect(screen, (255, 255, 255), tile[1], 2)
 
 
 
